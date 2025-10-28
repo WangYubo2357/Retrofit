@@ -1,5 +1,24 @@
 apply plugin: 'org.jetbrains.kotlin.jvm'
 
+// 添加自定义任务来运行各个示例
+task runSimpleService(type: JavaExec) {
+    dependsOn 'build'
+    classpath = sourceSets.main.runtimeClasspath
+    mainClass = 'com.example.retrofit.SimpleService'
+}
+
+task runSimpleMockService(type: JavaExec) {
+    dependsOn 'build'
+    classpath = sourceSets.main.runtimeClasspath
+    mainClass = 'com.example.retrofit.SimpleMockService'
+}
+
+task runCrawler(type: JavaExec) {
+    dependsOn 'build'
+    classpath = sourceSets.main.runtimeClasspath
+    mainClass = 'com.example.retrofit.Crawler'
+}
+
 dependencies {
   implementation projects.retrofit
   implementation projects.retrofitMock

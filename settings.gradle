@@ -45,5 +45,6 @@ include ':retrofit-converters:simplexml'
 include ':retrofit-converters:wire'
 
 include ':samples'
+include ':android-app'
 
 enableFeaturePreview('TYPESAFE_PROJECT_ACCESSORS')

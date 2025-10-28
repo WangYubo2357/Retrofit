@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Retrofit Example</string>
+    <string name="button_fetch">获取数据</string>
+    <string name="loading">加载中...</string>
+    <string name="error">错误</string>
+    <string name="no_data">暂无数据</string>
+</resources>
+
